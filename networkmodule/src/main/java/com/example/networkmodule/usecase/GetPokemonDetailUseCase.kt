@@ -4,6 +4,7 @@ import com.example.core.BaseUseCase
 import com.example.networkmodule.model.PokemonDetailResponse
 import com.example.networkmodule.repository.PokemonRepository
 import kotlinx.coroutines.flow.Flow
+import com.example.core.Result
 import javax.inject.Inject
 import javax.inject.Singleton
 

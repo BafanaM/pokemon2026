@@ -5,6 +5,7 @@ import com.example.networkmodule.repository.PokemonRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton
+import com.example.core.Result
 
 @Singleton
 class GetPokemonListUseCase @Inject constructor(
