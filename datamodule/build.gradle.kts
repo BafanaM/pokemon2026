@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.kapt)
@@ -7,16 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.pokemonchallenge"
+    namespace = "com.example.datamodule"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.pokemonchallenge"
         minSdk = 24
-        targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -45,9 +40,9 @@ android {
 }
 
 dependencies {
-    // Feature modules
-    implementation(project(":landingmodule"))
-    implementation(project(":datamodule"))
+    // Core and Network modules
+    implementation(project(":core"))
+    implementation(project(":networkmodule"))
 
     // AndroidX Core
     implementation(libs.androidx.core.ktx)
@@ -69,7 +64,16 @@ dependencies {
     kapt(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
+    // Coroutines
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
 
+    // Lifecycle
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+    // Image Loading
+    implementation(libs.coil.compose)
 
     // Testing
     testImplementation(libs.junit)

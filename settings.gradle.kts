@@ -21,4 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "PokemonChallenge"
 include(":app")
- 
+include(":core")
+include(":landingmodule")
+include(":datamodule")
+include(":networkmodule")
