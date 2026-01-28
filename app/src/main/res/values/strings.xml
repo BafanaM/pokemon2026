@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">PokemonChallenge</string>
+
+    <string name="splash_alpha_animation">Alpha Animation</string>
+    <string name="splash_scale_animation">Scale Animation</string>
+    <string name="splash_rotation_animation">Rotation Animation</string>
+    <string name="splash_infinite_rotation">Infinite Rotation</string>
+    <string name="splash_continuous_rotation">Continuous Rotation</string>
+    <string name="splash_lightning_emoji">⚡</string>
+    <string name="splash_pokedex_title">Pokédex</string>
+    <string name="splash_float_animation">Float Animation %d</string>
+    <string name="splash_float_label">Float %d</string>
+
 </resources>

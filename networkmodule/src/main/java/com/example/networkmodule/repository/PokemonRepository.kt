@@ -24,16 +24,24 @@ class PokemonRepository @Inject constructor(
      * Get all Pokemon from the API.
      * @return Flow of Result containing list of Pokemon or error
      */
-    override suspend fun getAll(): Flow<Result<List<PokemonListItem>>> = flow {
+    override fun getAll(): Flow<Result<List<PokemonListItem>>> =
+        getAll(limit = NetworkConstants.DEFAULT_LIMIT, offset = NetworkConstants.DEFAULT_OFFSET)
+
+    /**
+     * Get a paginated list of Pokemon from the API.
+     *
+     * Note: this returns a cold [Flow], so it should not be marked `suspend`.
+     */
+    fun getAll(limit: Int, offset: Int): Flow<Result<List<PokemonListItem>>> = flow {
         emit(Result.Loading)
-        
+
         // Check network connectivity first
         if (!networkUtils.isNetworkAvailable()) {
             emit(Result.Error(Exception(NetworkConstants.NO_INTERNET_AVAILABLE)))
             return@flow
         }
-        
-        val response = pokeApiService.getPokemonList(limit = NetworkConstants.DEFAULT_LIMIT, offset = NetworkConstants.DEFAULT_OFFSET)
+
+        val response = pokeApiService.getPokemonList(limit = limit, offset = offset)
         emit(Result.Success(response.results))
     }.catch { e ->
         val errorMessage = NetworkErrorHandler.handleException(e)

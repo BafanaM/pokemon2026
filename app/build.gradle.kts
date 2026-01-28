@@ -47,7 +47,7 @@ android {
 dependencies {
     // Feature modules
     implementation(project(":landingmodule"))
-    implementation(project(":datamodule"))
+    implementation(project(":detailsmodule"))
 
     // AndroidX Core
     implementation(libs.androidx.core.ktx)
@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.material)
 
     // Navigation
     implementation(libs.androidx.navigation.compose)

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Remove the MainActivity declaration -->
+    <!-- Keep only necessary permissions or configurations -->
+</manifest>

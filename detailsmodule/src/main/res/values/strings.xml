@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">datamodule</string>
+
+    <!-- Error messages -->
+    <string name="unknown_error">Unknown error</string>
+    <string name="unexpected_error_occurred">Unexpected error occurred</string>
+
+    <!-- Pokemon detail -->
+    <string name="pokemon_detail_loading">Loading Pokémon details...</string>
+    <string name="pokemon_detail_error">Failed to load Pokémon details</string>
+    <string name="pokemonid">pokemonId</string>
+
+    <!-- Error detection keywords -->
+    <string name="keyword_no_internet_connection">No internet connection</string>
+    <string name="keyword_network">network</string>
+    <string name="keyword_timeout">timeout</string>
+
+    <!-- Error messages for ViewModel -->
+    <string name="pokemon_id_required_error">Pokemon ID is required in SavedStateHandle</string>
+
+    <!-- InfoScreen UI -->
+    <string name="pokemon_info_title">Pokemon Info</string>
+    <string name="back_button_description">Back</string>
+
+    <!-- Section titles -->
+    <string name="stats_section_title">Stats</string>
+    <string name="types_section_title">Types</string>
+    <string name="abilities_section_title">Abilities</string>
+    <string name="forms_section_title">Forms</string>
+
+    <!-- Pokemon details -->
+    <string name="pokemon_image_description">Pokemon %s</string>
+    <string name="pokemon_id_format">#%s</string>
+
+    <!-- Pokemon attributes -->
+    <string name="height_label">Height</string>
+    <string name="weight_label">Weight</string>
+    <string name="base_exp_label">Base Exp</string>
+
+    <!-- Units -->
+    <string name="height_unit">m</string>
+    <string name="weight_unit">kg</string>
+
+    <!-- LazyColumn item keys -->
+    <string name="key_header">header</string>
+    <string name="key_stats">stats</string>
+    <string name="key_types">types</string>
+    <string name="key_abilities">abilities</string>
+    <string name="key_forms">forms</string>
+</resources>

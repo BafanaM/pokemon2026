@@ -22,6 +22,7 @@ mockk = "1.13.8"
 turbine = "1.0.0"
 archCoreTesting = "2.2.0"
 coroutinesTesting = "1.8.1"
+material = "1.12.0"
 
 [libraries]
 # AndroidX Core
@@ -68,6 +69,9 @@ androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lif
 
 # Image Loading
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+
+# Material Components (XML themes, attrs like colorPrimaryVariant)
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 # Testing
 junit = { group = "junit", name = "junit", version.ref = "junit" }

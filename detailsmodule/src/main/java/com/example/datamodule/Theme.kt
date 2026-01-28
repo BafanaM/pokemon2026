@@ -1,4 +1,4 @@
-package com.example.landingmodule.ui
+package com.example.datamodule
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
@@ -11,15 +11,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Red80,
-    secondary = Grey80,
-    tertiary = DarkGrey80
+    primary = Purple80,
+    secondary = PurpleGrey80,
+    tertiary = Pink80
 )
 
 private val LightColorScheme = lightColorScheme(
-    primary = Red80,
-    secondary = Grey80,
-    tertiary = DarkGrey80
+    primary = Purple40,
+    secondary = PurpleGrey40,
+    tertiary = Pink40
 )
 
 @Composable

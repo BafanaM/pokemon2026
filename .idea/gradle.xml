@@ -12,7 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/core" />
-            <option value="$PROJECT_DIR$/datamodule" />
+            <option value="$PROJECT_DIR$/detailsmodule" />
             <option value="$PROJECT_DIR$/landingmodule" />
             <option value="$PROJECT_DIR$/networkmodule" />
           </set>

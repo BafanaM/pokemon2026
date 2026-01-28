@@ -1,3 +1,53 @@
 <resources>
     <string name="app_name">landingmodule</string>
+
+    <!-- Search related -->
+    <string name="search_placeholder">Search Pokémon</string>
+    <string name="search_icon_description">Search</string>
+
+    <!-- Error messages -->
+    <string name="no_pokemon_found">No Pokémon found matching your search</string>
+    <string name="unknown_error">Unknown error occurred</string>
+
+    <!-- Network error messages -->
+    <string name="no_internet_connection">No Internet Connection</string>
+    <string name="request_timed_out">Request Timed Out</string>
+    <string name="server_error">Server Error</string>
+    <string name="network_error">Network Error</string>
+    <string name="something_went_wrong">Something Went Wrong</string>
+
+    <!-- Network error help text -->
+    <string name="check_wifi_mobile">Check your Wi-Fi or mobile data connection</string>
+    <string name="connection_slow">Your connection might be slow</string>
+    <string name="server_issues">The server is experiencing issues</string>
+
+    <!-- UI elements -->
+    <string name="retry_button">Retry</string>
+    <string name="no_content_available">No content available</string>
+
+    <!-- Pokemon related -->
+    <string name="pokemon_image_description">Pokémon %s</string>
+    <string name="pokemon_id_format">#%s</string>
+
+    <!-- Greeting -->
+    <string name="greeting_message">Hello %s!</string>
+
+    <!-- Error keywords for detection -->
+    <string name="keyword_no_internet">No internet</string>
+    <string name="keyword_timeout">timeout</string>
+    <string name="keyword_server">server</string>
+    <string name="keyword_network">network</string>
+
+    <!-- Default values -->
+    <string name="default_name">Android</string>
+
+    <!-- Additional error messages -->
+    <string name="unexpected_error_occurred">Unexpected error: %s</string>
+    <string name="unable_to_connect">Unable to connect to server</string>
+    <string name="server_timeout">Server timeout. Please try again later.</string>
+    <string name="server_error_with_code">Server error (%d). Please try again.</string>
+    <string name="no_internet_available">No internet connection available</string>
+    <string name="retry">Retry</string>
+    <string name="unknown_error_occurred">Unknown error occurred</string>
+
 </resources>
